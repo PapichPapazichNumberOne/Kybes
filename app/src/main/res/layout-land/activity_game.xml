@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:ignore="MissingDefaultResource">
+    <EditText
+        android:id="@+id/edit_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_player_name"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+
 
     <TextView
         android:id="@+id/text_player_name"
@@ -14,13 +22,6 @@
         android:textSize="18sp"
         android:textStyle="bold"/>
 
-    <EditText
-        android:id="@+id/edit_player_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_player_name"
-        android:layout_marginTop="8dp"
-        android:inputType="text"/>
 
     <Button
         android:id="@+id/btn_roll_dice"
@@ -38,15 +39,25 @@
         android:layout_marginTop="16dp"
         android:textSize="20sp"
         android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text_round_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_computer_score"
+        android:layout_marginTop="8dp"
+        android:text="Раунд: 1"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/text_player_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_result"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-1dp"
         android:text="Ваши очки: 0"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/text_computer_score"
